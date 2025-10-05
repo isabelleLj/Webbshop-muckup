@@ -1,0 +1,182 @@
+:root {
+
+    --space-cadet: rgb( 43, 45, 66 );
+    --cool-gray: rgb(141, 153, 174);
+    --white: rgb(237, 242, 244);
+    --Red: rgb(239, 35, 60);
+}
+
+body {
+
+    display: flex;
+    justify-content:center;
+    background-color: var(--Red);
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    color: var(--white);
+    margin: 0;
+}
+
+.navtop{
+
+    display: flex;
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--space-cadet) ;
+    margin: 0px 32px 0px 32px;
+     border: solid 2px var(--cool-gray);
+    
+}
+
+.navtopborder{
+
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.navbotborder{
+
+    border-radius: 4px 4px 0px 0px;
+    border-bottom: 0px;
+
+}
+
+.search{
+
+    border: solid 2px var(--space-cadet);
+    border-radius: 8px;
+    background-color:var(--cool-gray);
+    color:var(--space-cadet);
+    padding-right: 100px;
+
+}
+
+section{
+
+    position: relative;
+    background-image: url(./images/kawasaki\ ninja.jpg) ;
+    background-position: center;
+    height: 400px;
+    width: 1100px;
+    margin: 16px 32px 16px 32px;
+    border: solid 2px var(--space-cadet);
+    border-radius: 8px;
+
+}
+
+.button{
+
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background-color: var(--Red);
+    color: var(--space-cadet);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.42);
+    cursor: pointer;
+
+}
+
+.button:hover{
+    background-color: var(--cool-gray);
+}
+
+.navgridlist{
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+
+}
+
+.grid-list {
+
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 64px;
+    list-style: none;
+    padding: 16px;
+    background-color: var(--cool-gray);
+    border: solid 8px var(--space-cadet);
+    border-radius: 8px;
+    padding: 52px;
+
+}
+
+.grid-list img {
+
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.grid-list img:hover {
+
+  transform: scale(1.05); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+  cursor: pointer; 
+
+}
+
+.grid-list p {
+
+    margin-top: 16px;
+    font-weight: bold;
+    color: var(--white);
+
+}
+
+.navbar{
+    
+    width: 200px;
+    background-color: var(--space-cadet);
+    color: var(--white);
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 16px;
+
+}
+
+.p-filters{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    border: solid 4px var(--space-cadet);
+    border-radius: 8px;
+    background-color: var(--cool-gray);
+    padding-top: 16px;
+    margin: 0px;
+}
+
+.inavbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cool-gray);
+    border: 8px solid var(--space-cadet);
+    border-radius: 8px;
+    list-style: none;
+
+}
+
+.linknav{
+
+    text-decoration: none;
+    color: var(--white);
+    padding: 24px;
+
+}
+
